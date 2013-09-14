@@ -1,0 +1,16 @@
+.nextProda {
+	background: none repeat scroll 0 0 red;
+	border-radius: 0 4px 4px 0;
+	display: block;
+	left: 0;
+	padding: 15px;
+	position: fixed;
+	top: 50%;
+}
+
+.proda{
+	background-color: #fff;
+}
+.prodanew{
+	background-color: #ccc;
+}
