@@ -2,7 +2,7 @@
 /*
 Plugin Name: Proda
 Description: Плагин для сайта dem-mihailov.ru
-Version: 1.0
+Version: 1.1
 Author: dimas
 Author URI: http://odminstudios.ru/
 */
@@ -29,3 +29,12 @@ function os_dem_styles_and_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'os_dem_styles_and_scripts' );
+
+function os_get_characters($text) {
+	if ($text == '') {
+		return 0;
+	};
+	$count = strlen(utf8_decode($text));
+	return $count;
+}
+
