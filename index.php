@@ -38,3 +38,12 @@ function os_get_characters($text) {
 	return $count;
 }
 
+function os_show_kb_count($text){
+	
+	$count=os_get_characters($text);
+	if($count>0){
+		$count=round($count/1024);
+	}
+
+	echo $count.' кб';
+}
